@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#heading{
+    text-align: center;
+    font-size: clamp(40px , 6vw + 1rem, 50px);
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#quest{
+    margin-top: 30px;
+    font-size: clamp(16px , 1vw + 1rem, 40px);
+}
+
+.container{
+    width: 70%;
+    margin: 40px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    margin: 40px 0px;
+    height: 20px;
+    width: 20px;
+}
+
+
+
+
+#Next-btn{
+    margin-top: 20px;
+    padding-block: clamp(5px, 2vw + 1rem, 12px);
+    padding-inline: clamp(17px, 2vw + 1rem, 30px);
+    color: white;
+    font-weight:bold;
+    font-size: clamp(12px, 5vw + 3rem, 16px);
+    float: right;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+label{
+    font-size: clamp(12px, 1vw + 0.8rem, 20px)
+
+}
+
+.optionDiv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.optionDiv:hover{
+    background-color: #d4cdcd;
+
+}
+
+.timer{
+    display: flex;
+    margin-left: 10px;
+    font-size: clamp(16px, 3vw + 1rem, 40px);
+    position: absolute;
+    right: clamp(0px, 1vw + 1rem, 20px);
+    top: 60px;
+}
+
+
+
+
+
+@media  screen and (max-width:400px) {
+   .container{
+    width: 100%;
+    padding: 0px 10px;
+   }
+
+   /* .timer{
+    top: 25px;
+   } */
+   
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timer">
+        <p id="minit">00</p>
+        <p>:</p>
+        <p id="second">00</p>
+    </div>
+    <h1 id="heading">Quiz App</h1>
+    <div class="container">
+        <hr>
+        <h2 id="quest"></h2>
+        <div class="optionDiv">
+            <input onclick="clicked()" type="radio" value="1" name="opt" id="option1">
+            <label for="option1" id="opt1"></label><br>
+        </div>
+        <div class="optionDiv">
+            <input onclick="clicked()" type="radio" value="2" name="opt" id="option2">
+            <label for="option2" id="opt2"></label><br>
+        </div>
+        <div class="optionDiv">
+            <input onclick="clicked()" type="radio" value="3" name="opt" id="option3">
+            <label for="option3" id="opt3"></label><br>
+        </div>
+        <button id="Next-btn" disabled onclick="quiz()">Next</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
